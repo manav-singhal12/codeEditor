@@ -1,0 +1,91 @@
+/* index.css */
+
+/* Body and container styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout for responsiveness */
+    gap: 10px;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Left panel styling */
+.left {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+}
+
+.html,
+.css,
+.js {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.html h2,
+.css h2,
+.js h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+textarea {
+    width: 100%; /* Full width on smaller screens */
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+/* Right panel styling */
+.right {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width on smaller screens */
+    height: 60vh; /* Adjusted height for responsiveness */
+}
+
+.right h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#output {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Switch back to row layout for larger screens */
+    }
+
+    .left {
+        width: 50%; /* Take half of the container width */
+        margin-bottom: 0;
+    }
+
+    .right {
+        width: 50%; /* Take half of the container width */
+        height: auto; /* Auto height to adapt content */
+    }
+}
