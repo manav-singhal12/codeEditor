@@ -44,7 +44,7 @@ body {
 }
 
 textarea {
-    width: 100%; /* Full width on smaller screens */
+    width: 90%; /* Full width on smaller screens */
     border: 1px solid #ccc;
     padding: 10px;
     font-size: 14px;
